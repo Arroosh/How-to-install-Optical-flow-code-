@@ -1,6 +1,7 @@
 # How-to-install-Optical-flow-code-
-Hello everyone! I have successfully installed and import caffe having version of 1.0.0. when i download optical flow code from http://www.cs.cmu.edu/~jcwalker/OF/OF.html and try to compile it.It gives me an error. 
+Hello everyone! I have successfully installed and import caffe seperately having version of 1.0.0. But when i download optical flow code from http://www.cs.cmu.edu/~jcwalker/OF/OF.html and try to compile it.It gives me an error. 
 Here is the error 
+
 [ 75%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/infogain_loss_layer.cpp.o 
 [ 75%] Linking CXX static library ../../lib/libcaffe.a 
 [ 75%] Built target caffe Scanning dependencies of target upgrade_net_proto_binary.bin 
@@ -9,7 +10,8 @@ In file included from /home/nonsemantic/softwares/optical_flow_prediction/includ
 from /home/nonsemantic/softwares/optical_flow_prediction/include/caffe/caffe.hpp:16,                  
 from /home/nonsemantic/softwares/optical_flow_prediction/tools/upgrade_net_proto_binary.cpp:9: /home/nonsemantic/softwares/optical_flow_prediction/include/caffe/data_layers.hpp:9:18: fatal error: hdf5.h: No such file or directory compilation terminated. tools/CMakeFiles/upgrade_net_proto_binary.bin.dir/build.make:62: recipe for target 'tools/CMakeFiles/upgrade_net_proto_binary.bin.dir/upgrade_net_proto_binary.cpp.o' failed make[2]: *** [tools/CMakeFiles/upgrade_net_proto_binary.bin.dir/upgrade_net_proto_binary.cpp.o] 
 Error 1 CMakeFiles/Makefile2:4016: recipe for target 'tools/CMakeFiles/upgrade_net_proto_binary.bin.dir/all' failed make[1]: *** [tools/CMakeFiles/upgrade_net_proto_binary.bin.dir/all] 
-Error 2 Makefile:127: recipe for target 'all' failed make: *** [all] Error 2 nonsemantic@nonsemantic-Aspire-E1-571G:~/softwares/optical_flow_prediction/build$  
+Error 2 Makefile:127: recipe for target 'all' failed make: *** [all] Error 2 
+nonsemantic@nonsemantic-Aspire-E1-571G:~/softwares/optical_flow_prediction/build$  
 
 I have edit Makefile.config 
 INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
